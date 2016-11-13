@@ -1,25 +1,23 @@
 var express = require('express');
 var router = express.Router();
 var model = require('./../model/customers')();
-
+var mensagem = false;
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	model.find(null, function(err, customers) {
-		if(err) {
-			throw err;
-		}
-  	res.render('index', { title: 'Expresss', customers: customers });
-	});
+  	res.render('index', { success: mensagem });
+    mensagem = false;
+
 });
 
 /* POST home page. */
 router.post('/add', function(req, res, next) {
 	var body = req.body;
 	model.create(body, function(err, customer) {
-		console.log('aaa');
 		if (err) {
 			throw err;
+      mensagem = false;
 		}
+    mensagem = true;
 		res.redirect('/');
 	});
 });
