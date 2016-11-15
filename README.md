@@ -1,12 +1,13 @@
-# hotsite - Artefato 3 - Estágio Supervisionado
+# Hotsite - Artefato 4 - Estágio Supervisionado II
 
+##### Gustavo Marttos
 ##### Jordana Nogueira 
-##### Taynara Senne
-###### 6º termo de Sistemas de Informações - Univem
+##### Taynara Sene
+###### 6º termo de Sistemas de Informações - UNIVEM
 
 ## Express
 
-Esse projeto esta sendo criado com Express, framework para Node.js
+Esse projeto foi criado com Express, framework para Node.js
 
 ```
 $ sudo npm install express-generator -g
@@ -14,26 +15,31 @@ $ sudo npm install express-generator -g
 ```
 $ express <nome da sua aplicação>
 ```
-Considerando que você já esta dentro da pasta da sua aplicação, rode o comando abaixo para instalar as dependências
+
+Considerando que você já esteja dentro da pasta da sua aplicação, rode o comando abaixo para instalar as dependências:
 
 ```
 $ npm install
 ```
-Dentro da pasta da sua aplicação instale o nodemon para rodar o projeto
+
+Dentro da pasta da sua aplicação, instale o `nodemon` para rodar o projeto:
+
 ```
 $ sudo npm install nodemon
 ```
 
-Para rodar o servidor
+Para rodar o servidor:
+
 ```
 $ nodemon start
 ```
 
-## Mongodb
+## MongoDB
 
-Para instalar o mongo no ubuntu segui [esse](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04) tutorial.
+Para instalar o MongoDB no Ubuntu, siga [esse](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04) tutorial.
 
-Para acessa o mongo:
+    Para acessr o MongoDB:
+
 ```
 $ mongo
 ```
