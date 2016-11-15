@@ -61,4 +61,17 @@
         }
     });
 
+    $("#contato").submit(function(){
+       var dados = $(this).serialize();
+       $.ajax({
+           type: "POST",
+           url: "/add",
+           data: dados,
+           success: function(data) {
+             $('.sucesso').text("Seu cadastro foi concluido com sucesso!")
+          }
+       });
+       return false;
+   });
+
 })(jQuery); // End of use strict
